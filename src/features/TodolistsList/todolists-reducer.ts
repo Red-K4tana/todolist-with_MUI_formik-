@@ -8,6 +8,9 @@ import {
     SetAppStatusActionType
 } from '../../app/app-reducer'
 import {handleServerNetworkError} from "../../utils/error-utils";
+import {fetchTasksTC} from "./tasks-reducer";
+import {useDispatch} from "react-redux";
+
 
 const initialState: Array<TodolistDomainType> = []
 
@@ -35,31 +38,31 @@ export const todolistsReducer = (state: Array<TodolistDomainType> = initialState
 export const removeTodolistAC = (id: string) => ({type: 'REMOVE-TODOLIST', id} as const)
 export const addTodolistAC = (todolist: TodolistType) => ({type: 'ADD-TODOLIST', todolist} as const)
 export const changeTodolistTitleAC = (id: string, title: string) => ({
-    type: 'CHANGE-TODOLIST-TITLE',
-    id,
-    title
-} as const)
+    type: 'CHANGE-TODOLIST-TITLE', id, title} as const)
 export const changeTodolistFilterAC = (id: string, filter: FilterValuesType) => ({
-    type: 'CHANGE-TODOLIST-FILTER',
-    id,
-    filter
-} as const)
+    type: 'CHANGE-TODOLIST-FILTER', id, filter} as const)
 export const changeTodolistEntityStatusAC = (id: string, status: RequestStatusType) => ({
     type: 'CHANGE-TODOLIST-ENTITY-STATUS', id, status } as const)
 export const setTodolistsAC = (todolists: Array<TodolistType>) => ({type: 'SET-TODOLISTS', todolists} as const)
 
 // thunks
 export const fetchTodolistsTC = () => {
-    return (dispatch: ThunkDispatch) => {
+    return (dispatch: any) => {
         dispatch(setAppStatusAC('loading'))
         todolistsAPI.getTodolists()
             .then((res) => {
                 dispatch(setTodolistsAC(res.data))
                 dispatch(setAppStatusAC('succeeded'))
+                return res.data
+            })
+            .then(todolist => {
+                todolist.forEach(tl => {
+                    dispatch(fetchTasksTC(tl.id))
+                })
             })
             .catch(error => {
-                handleServerNetworkError(error.response.data.message, dispatch)
-            })
+            handleServerNetworkError(error.response.data.message, dispatch)
+        })
     }
 }
 export const removeTodolistTC = (todolistId: string) => {

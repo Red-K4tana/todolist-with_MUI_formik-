@@ -1,23 +1,23 @@
 {
   "files": {
-    "main.css": "/namerepository/static/css/main.e217e7ab.chunk.css",
-    "main.js": "/namerepository/static/js/main.4d659371.chunk.js",
-    "main.js.map": "/namerepository/static/js/main.4d659371.chunk.js.map",
-    "runtime-main.js": "/namerepository/static/js/runtime-main.76da87b6.js",
-    "runtime-main.js.map": "/namerepository/static/js/runtime-main.76da87b6.js.map",
-    "static/js/2.43e136ef.chunk.js": "/namerepository/static/js/2.43e136ef.chunk.js",
-    "static/js/2.43e136ef.chunk.js.map": "/namerepository/static/js/2.43e136ef.chunk.js.map",
-    "static/js/3.5dc7e130.chunk.js": "/namerepository/static/js/3.5dc7e130.chunk.js",
-    "static/js/3.5dc7e130.chunk.js.map": "/namerepository/static/js/3.5dc7e130.chunk.js.map",
-    "index.html": "/namerepository/index.html",
-    "static/css/main.e217e7ab.chunk.css.map": "/namerepository/static/css/main.e217e7ab.chunk.css.map",
-    "static/js/2.43e136ef.chunk.js.LICENSE.txt": "/namerepository/static/js/2.43e136ef.chunk.js.LICENSE.txt",
-    "static/media/Error404.module.css": "/namerepository/static/media/error404.2e79e220.png"
+    "main.css": "/todolist-with_MUI_formik-/static/css/main.e1bc0cff.chunk.css",
+    "main.js": "/todolist-with_MUI_formik-/static/js/main.4d659371.chunk.js",
+    "main.js.map": "/todolist-with_MUI_formik-/static/js/main.4d659371.chunk.js.map",
+    "runtime-main.js": "/todolist-with_MUI_formik-/static/js/runtime-main.32e4ca66.js",
+    "runtime-main.js.map": "/todolist-with_MUI_formik-/static/js/runtime-main.32e4ca66.js.map",
+    "static/js/2.43e136ef.chunk.js": "/todolist-with_MUI_formik-/static/js/2.43e136ef.chunk.js",
+    "static/js/2.43e136ef.chunk.js.map": "/todolist-with_MUI_formik-/static/js/2.43e136ef.chunk.js.map",
+    "static/js/3.5dc7e130.chunk.js": "/todolist-with_MUI_formik-/static/js/3.5dc7e130.chunk.js",
+    "static/js/3.5dc7e130.chunk.js.map": "/todolist-with_MUI_formik-/static/js/3.5dc7e130.chunk.js.map",
+    "index.html": "/todolist-with_MUI_formik-/index.html",
+    "static/css/main.e1bc0cff.chunk.css.map": "/todolist-with_MUI_formik-/static/css/main.e1bc0cff.chunk.css.map",
+    "static/js/2.43e136ef.chunk.js.LICENSE.txt": "/todolist-with_MUI_formik-/static/js/2.43e136ef.chunk.js.LICENSE.txt",
+    "static/media/Error404.module.css": "/todolist-with_MUI_formik-/static/media/error404.2e79e220.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.76da87b6.js",
+    "static/js/runtime-main.32e4ca66.js",
     "static/js/2.43e136ef.chunk.js",
-    "static/css/main.e217e7ab.chunk.css",
+    "static/css/main.e1bc0cff.chunk.css",
     "static/js/main.4d659371.chunk.js"
   ]
 }

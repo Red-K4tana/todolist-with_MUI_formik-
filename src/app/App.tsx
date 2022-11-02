@@ -31,6 +31,10 @@ function App({demo = false}: PropsType) {
     const isInit = useSelector<AppRootStateType, boolean>((state) => state.app.isInit)
     const isLoggedIn = useSelector<AppRootStateType, InitialAuthStateType>(state => state.auth).isLoggedIn
 
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!
+    //изменения в App.tsx, app-reducer.ts, auth-reducer.ts
+    // !!!!!!!!!!!!!!!!!!!!!!!!!!!!!!
+
     useEffect(()=> {
         /*dispatch(loginTC({email: 'ceptor.nill@gmail.com', password: '123456'}))*/
     },[])

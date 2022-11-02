@@ -9,7 +9,6 @@ import {
 } from '../../app/app-reducer'
 import {handleServerNetworkError} from "../../utils/error-utils";
 import {fetchTasksTC} from "./tasks-reducer";
-import {useDispatch} from "react-redux";
 
 
 const initialState: Array<TodolistDomainType> = []

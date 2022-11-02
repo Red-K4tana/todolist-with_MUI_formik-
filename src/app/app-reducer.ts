@@ -12,7 +12,7 @@ export type InitialStateType = {
 }
 
 const initialState: InitialStateType = {
-    isInit: false,
+    isInit: true, // init should be - false
     status: 'idle',
     error: null,
 }

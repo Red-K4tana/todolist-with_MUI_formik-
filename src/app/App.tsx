@@ -72,7 +72,7 @@ function App({demo = false}: PropsType) {
             </AppBar>
             <Container fixed>
                 <Routes>
-                    <Route path='/' element={<TodolistsList demo={demo}/>}/>
+                    <Route path='todolist-with_MUI_formik-' element={<TodolistsList demo={demo}/>}/>
                     <Route path='login' element={<Login />}/>
                     {/*<Route path="*" element={<Navigate to='/404' />}/>*/} {/* " * " означает неправильный URL  */}
                     <Route path="*" element={<Error404 />}/>

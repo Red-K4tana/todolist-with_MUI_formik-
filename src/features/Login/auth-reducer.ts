@@ -10,7 +10,7 @@ import {authAPI, LoginParamsType} from "../../api/todolists-api";
 import {handleServerAppError, handleServerNetworkError} from "../../utils/error-utils";
 
 const initialState = {
-    isLoggedIn: true //init should be - false
+    isLoggedIn: false
 }
 export type InitialAuthStateType = typeof initialState
 

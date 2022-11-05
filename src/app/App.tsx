@@ -31,14 +31,14 @@ function App({demo = false}: PropsType) {
     const isInit = useSelector<AppRootStateType, boolean>((state) => state.app.isInit)
     const isLoggedIn = useSelector<AppRootStateType, InitialAuthStateType>(state => state.auth).isLoggedIn
 
-
+    // add change in app-reducer, auth-reducer to work with authorization
 
     useEffect(()=> {
         dispatch(loginTC({email: 'ceptor.nill@gmail.com', password: '123456'}))
     },[])
-    useEffect(()=>{
 
-        dispatch(initializeAppTC())
+    useEffect(()=>{
+        /*dispatch(initializeAppTC())*/
     }, [])
 
     if (!isInit) {
@@ -48,7 +48,7 @@ function App({demo = false}: PropsType) {
     }
 
     const logoutHandler = () => {
-        dispatch(logoutTC())
+        /*dispatch(logoutTC())*/
     }
 
     return (
@@ -72,8 +72,8 @@ function App({demo = false}: PropsType) {
             </AppBar>
             <Container fixed>
                 <Routes>
-                    <Route path='todolist-with_MUI_formik-' element={<TodolistsList demo={demo}/>}/>
-                    <Route path='login' element={<Login />}/>
+                    <Route path={'/'} element={<TodolistsList demo={demo}/>}/>
+                    <Route path={'/login'} element={<Login />}/>
                     {/*<Route path="*" element={<Navigate to='/404' />}/>*/} {/* " * " означает неправильный URL  */}
                     <Route path="*" element={<Error404 />}/>
                 </Routes>

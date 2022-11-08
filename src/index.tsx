@@ -7,10 +7,12 @@ import {Provider} from 'react-redux';
 import {store} from './app/store';
 import {BrowserRouter, HashRouter} from "react-router-dom";
 
+// removed basename from BrowserRouter
+
 ReactDOM.render(
 <React.StrictMode>
     <Provider store={store}>
-        <BrowserRouter  basename={process.env.PUBLIC_URL}>
+        <BrowserRouter  >
             <App/>
         </BrowserRouter>
     </Provider>
@@ -19,6 +21,9 @@ ReactDOM.render(
 
     document.getElementById('root')
 );
+
+// @ts-ignore
+window.baseUrl = process.env.PUBLIC_URL
 
 // If you want to start measuring performance in your app, pass a function
 // to log results (for example: reportWebVitals(console.log))

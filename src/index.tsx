@@ -7,12 +7,12 @@ import {Provider} from 'react-redux';
 import {store} from './app/store';
 import {BrowserRouter, HashRouter} from "react-router-dom";
 
-// removed basename from BrowserRouter
+
 
 ReactDOM.render(
 <React.StrictMode>
     <Provider store={store}>
-        <BrowserRouter  >
+        <BrowserRouter basename={process.env.PUBLIC_URL} >
             <App/>
         </BrowserRouter>
     </Provider>

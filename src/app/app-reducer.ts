@@ -12,7 +12,7 @@ export type InitialStateType = {
 }
 
 const initialState: InitialStateType = {
-    isInit: true, // should be 'false' to work with authorization
+    isInit: false, // should be 'false' to work with authorization
     status: 'idle',
     error: null,
 }

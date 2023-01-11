@@ -14,31 +14,29 @@ import LinearProgress from '@mui/material/LinearProgress';
 import { Menu } from '@mui/icons-material';
 import { ErrorSnackbar } from '../components/ErrorSnackbar/ErrorSnackbar'
 import {Login} from "../features/Login/Login";
-import {Link, Navigate, NavLink, Route, Routes} from "react-router-dom";
+import { Route, Routes} from "react-router-dom";
 import Error404 from "./Error404";
 import {InitialAuthStateType, initializeAppTC, loginTC, logoutTC} from "../features/Login/auth-reducer";
 import {CircularProgress} from "@mui/material";
-import {fetchTodolistsTC} from "../features/TodolistsList/todolists-reducer";
+
 
 type PropsType = {
     demo?: boolean
 }
 
 function App({demo = false}: PropsType) {
-
     const dispatch = useDispatch()
     const status = useSelector<AppRootStateType, RequestStatusType>((state) => state.app.status)
     const isInit = useSelector<AppRootStateType, boolean>((state) => state.app.isInit)
     const isLoggedIn = useSelector<AppRootStateType, InitialAuthStateType>(state => state.auth).isLoggedIn
 
-    // add change in app-reducer, auth-reducer to work with authorization
 
     useEffect(()=> {
         dispatch(loginTC({email: 'ceptor.nill@gmail.com', password: '123456'}))
     },[])
 
     useEffect(()=>{
-        /*dispatch(initializeAppTC())*/
+        dispatch(initializeAppTC())
     }, [])
 
     if (!isInit) {
@@ -48,7 +46,7 @@ function App({demo = false}: PropsType) {
     }
 
     const logoutHandler = () => {
-        /*dispatch(logoutTC())*/
+        dispatch(logoutTC())
     }
 
     return (

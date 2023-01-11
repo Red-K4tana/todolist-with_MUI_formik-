@@ -27,8 +27,8 @@ export const Login = () => {
 
     const formik = useFormik({
         initialValues: {
-            email: '',
-            password: '',
+            email: 'free@samuraijs.com',
+            password: 'free',
             rememberMe: false
         },
         validate: (values) => {
@@ -55,7 +55,7 @@ export const Login = () => {
         },
     })
 
-    if (isLoggedIn === true) {
+    if (isLoggedIn) {
         return <Navigate to={'/'} />
     }
 
@@ -70,8 +70,8 @@ export const Login = () => {
                         </a>
                     </p>
                     <p>or use common test account credentials:</p>
-                    <p>Email: free@samuraijs.com</p>
-                    <p>Password: more than 2 characters</p>
+                    <p>Email: <i>free@samuraijs.com</i></p>
+                    <p>Password: <i>free</i></p>
                 </FormLabel>
                 <form onSubmit={formik.handleSubmit}>
                     <FormGroup>

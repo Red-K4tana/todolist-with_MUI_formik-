@@ -1,23 +1,23 @@
 {
   "files": {
     "main.css": "/todolist-with_MUI_formik-/static/css/main.043608e6.chunk.css",
-    "main.js": "/todolist-with_MUI_formik-/static/js/main.2ff64ef9.chunk.js",
-    "main.js.map": "/todolist-with_MUI_formik-/static/js/main.2ff64ef9.chunk.js.map",
-    "runtime-main.js": "/todolist-with_MUI_formik-/static/js/runtime-main.ad6b5f89.js",
-    "runtime-main.js.map": "/todolist-with_MUI_formik-/static/js/runtime-main.ad6b5f89.js.map",
-    "static/js/2.5a0a043d.chunk.js": "/todolist-with_MUI_formik-/static/js/2.5a0a043d.chunk.js",
-    "static/js/2.5a0a043d.chunk.js.map": "/todolist-with_MUI_formik-/static/js/2.5a0a043d.chunk.js.map",
-    "static/js/3.3a4e262b.chunk.js": "/todolist-with_MUI_formik-/static/js/3.3a4e262b.chunk.js",
-    "static/js/3.3a4e262b.chunk.js.map": "/todolist-with_MUI_formik-/static/js/3.3a4e262b.chunk.js.map",
+    "main.js": "/todolist-with_MUI_formik-/static/js/main.3291814f.chunk.js",
+    "main.js.map": "/todolist-with_MUI_formik-/static/js/main.3291814f.chunk.js.map",
+    "runtime-main.js": "/todolist-with_MUI_formik-/static/js/runtime-main.32e4ca66.js",
+    "runtime-main.js.map": "/todolist-with_MUI_formik-/static/js/runtime-main.32e4ca66.js.map",
+    "static/js/2.73e5c8fb.chunk.js": "/todolist-with_MUI_formik-/static/js/2.73e5c8fb.chunk.js",
+    "static/js/2.73e5c8fb.chunk.js.map": "/todolist-with_MUI_formik-/static/js/2.73e5c8fb.chunk.js.map",
+    "static/js/3.5dc7e130.chunk.js": "/todolist-with_MUI_formik-/static/js/3.5dc7e130.chunk.js",
+    "static/js/3.5dc7e130.chunk.js.map": "/todolist-with_MUI_formik-/static/js/3.5dc7e130.chunk.js.map",
     "index.html": "/todolist-with_MUI_formik-/index.html",
     "static/css/main.043608e6.chunk.css.map": "/todolist-with_MUI_formik-/static/css/main.043608e6.chunk.css.map",
-    "static/js/2.5a0a043d.chunk.js.LICENSE.txt": "/todolist-with_MUI_formik-/static/js/2.5a0a043d.chunk.js.LICENSE.txt",
+    "static/js/2.73e5c8fb.chunk.js.LICENSE.txt": "/todolist-with_MUI_formik-/static/js/2.73e5c8fb.chunk.js.LICENSE.txt",
     "static/media/Error404.module.css": "/todolist-with_MUI_formik-/static/media/error404.2e79e220.png"
   },
   "entrypoints": [
-    "static/js/runtime-main.ad6b5f89.js",
-    "static/js/2.5a0a043d.chunk.js",
+    "static/js/runtime-main.32e4ca66.js",
+    "static/js/2.73e5c8fb.chunk.js",
     "static/css/main.043608e6.chunk.css",
-    "static/js/main.2ff64ef9.chunk.js"
+    "static/js/main.3291814f.chunk.js"
   ]
 }

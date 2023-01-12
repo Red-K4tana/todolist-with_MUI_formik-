@@ -30,11 +30,6 @@ function App({demo = false}: PropsType) {
     const isInit = useSelector<AppRootStateType, boolean>((state) => state.app.isInit)
     const isLoggedIn = useSelector<AppRootStateType, InitialAuthStateType>(state => state.auth).isLoggedIn
 
-
-    useEffect(()=> {
-        dispatch(loginTC({email: 'ceptor.nill@gmail.com', password: '123456'}))
-    },[])
-
     useEffect(()=>{
         dispatch(initializeAppTC())
     }, [])

@@ -59,6 +59,7 @@ export const initializeAppTC = () => (dispatch: Dispatch<ActionsType>)=> {
                 handleServerNetworkError(error, dispatch)
         })
         .finally(() => {
+            console.log('IS-INIT')
             dispatch(setAppInitAC(true))
         })
 }

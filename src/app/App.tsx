@@ -53,7 +53,7 @@ export function App({demo = false}: PropsType) {
                         <Menu/>
                     </IconButton>
                     <Typography variant="h6">
-                        Todolist
+                        Todolist - нетудулист
                     </Typography>
                     {isLoggedIn && <Button variant={'contained'}
                                            color={'primary'}

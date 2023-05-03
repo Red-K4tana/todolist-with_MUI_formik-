@@ -49,9 +49,12 @@ export function App({demo = false}: PropsType) {
             <ErrorSnackbar/>
             <AppBar position="static">
                 <Toolbar>
-
-                    menu
-
+                    <IconButton edge="start" color="inherit" aria-label="menu">
+                        <Menu/>
+                    </IconButton>
+                    <Typography variant="h6">
+                        Todolist - нетудулист
+                    </Typography>
                     {isLoggedIn && <Button variant={'contained'}
                                            color={'primary'}
                                            onClick={()=>logoutHandler()}>
